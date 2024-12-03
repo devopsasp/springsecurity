@@ -11,6 +11,16 @@ public class Item {
 	{ 
 		
 	}
+	
+
+	public Item(int itemId, String itemName, float price, int quantityInStock) {
+		super();
+		this.itemId = itemId;
+		this.itemName = itemName;
+		this.price = price;
+		this.quantityInStock = quantityInStock;
+	}
+
 
 	public int getItemId() {
 		return itemId;

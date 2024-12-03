@@ -32,3 +32,5 @@
 0:0:0:0:0:0:0:1 - - [29/Nov/2024:15:46:11 +0530] "GET /sampleapp/additem HTTP/1.1" 200 391 http-bio-9065-exec-1 2040
 0:0:0:0:0:0:0:1 - - [29/Nov/2024:15:46:17 +0530] "GET /sampleapp/additem HTTP/1.1" 200 391 http-bio-9065-exec-6 5
 0:0:0:0:0:0:0:1 - - [29/Nov/2024:15:46:24 +0530] "POST /sampleapp/additem HTTP/1.1" 400 1060 http-bio-9065-exec-9 41
+0:0:0:0:0:0:0:1 - - [29/Nov/2024:15:47:16 +0530] "GET /sampleapp/additem HTTP/1.1" 200 391 http-bio-9065-exec-3 1863
+0:0:0:0:0:0:0:1 - - [29/Nov/2024:15:47:23 +0530] "POST /sampleapp/additem HTTP/1.1" 404 1005 http-bio-9065-exec-5 70
