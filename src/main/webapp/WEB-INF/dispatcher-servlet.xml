@@ -7,11 +7,14 @@
                            http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/context 
                            http://www.springframework.org/schema/context/spring-context.xsd">
-
-   
+<import resource="security-context.xml"/>
     <context:component-scan base-package="com.controller"/>
  <bean id="myObjectMapper" class="com.fasterxml.jackson.databind.ObjectMapper">
         <!-- Customize ObjectMapper properties as needed -->
+    </bean>
+    
+    <bean id="myXmlObjectMapper" class="com.fasterxml.jackson.dataformat.xml.XmlMapper">
+        <!-- Customize XmlMapper properties as needed -->
     </bean>
     
 <mvc:annotation-driven>
@@ -21,6 +24,9 @@
      <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
             <property name="objectMapper" ref="myObjectMapper"/>
         </bean>
+        <bean class="org.springframework.http.converter.xml.MappingJackson2XmlHttpMessageConverter">
+                <property name="objectMapper" ref="myXmlObjectMapper"/>
+            </bean>
 
     </mvc:message-converters>
 </mvc:annotation-driven>

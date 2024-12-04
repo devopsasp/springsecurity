@@ -2,20 +2,34 @@ package com.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.model.Item;
 
 import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+
 import java.util.ArrayList;
 @Controller
 public class HomeController {
 	
 	
-	@RequestMapping("/")
+	@RequestMapping("/home")
 	public String getIndex()
 	{ 
-		return "index";
+		return "home";
+	}
+	@RequestMapping("/login")
+	public String login(HttpServletRequest req) 
+	{ 
+		String err=req.getParameter("error");
+	if(err!=null)
+	{
+		System.out.println(err);
+	}
+		return "login";
 	}
 	
 	@RequestMapping("/viewitems")

@@ -29,3 +29,7 @@
 0:0:0:0:0:0:0:1 - - [03/Dec/2024:15:46:14 +0530] "GET /sampleapp/getitems HTTP/1.1" 200 208 http-bio-9065-exec-4 69
 0:0:0:0:0:0:0:1 - - [03/Dec/2024:15:48:12 +0530] "POST /sampleapp/addrestitem HTTP/1.1" 202 22 http-bio-9065-exec-7 7
 0:0:0:0:0:0:0:1 - - [03/Dec/2024:15:48:26 +0530] "GET /sampleapp/getitems HTTP/1.1" 200 405 http-bio-9065-exec-8 2
+0:0:0:0:0:0:0:1 - - [03/Dec/2024:15:49:39 +0530] "POST /sampleapp/addrestitem HTTP/1.1" 202 22 http-bio-9065-exec-2 1850
+0:0:0:0:0:0:0:1 - - [03/Dec/2024:15:49:48 +0530] "GET /sampleapp/getitems HTTP/1.1" 200 215 http-bio-9065-exec-3 46
+0:0:0:0:0:0:0:1 - - [03/Dec/2024:16:29:09 +0530] "GET /sampleapp/resthome/ HTTP/1.1" 404 949 http-bio-9065-exec-1 1611
+0:0:0:0:0:0:0:1 - - [03/Dec/2024:16:29:48 +0530] "GET /sampleapp/getitems HTTP/1.1" 200 253 http-bio-9065-exec-4 56
